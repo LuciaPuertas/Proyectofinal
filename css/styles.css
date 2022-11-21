@@ -47,7 +47,7 @@ h1 {
    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
    footer {
       text-align: center;
       background-color: antiquewhite;
@@ -85,7 +85,7 @@ a:visited {
    text-decoration: none;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
 ul {
    display: flex;
    font-size: 120%;
@@ -94,6 +94,15 @@ ul {
 }
 }
 
+@media screen and (min-width: 320px) {
+   ul {
+      display: flex;
+      font-size: 120%;
+      list-style-type: none;
+      text-decoration: none;
+   }
+   }
+
 ul {
    display: flex;
    font-size: 120%;
@@ -101,7 +110,7 @@ ul {
    text-decoration: none;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
 li {
    display: flex;
    font-size: 100%;
@@ -109,6 +118,15 @@ li {
    text-decoration: none;
 }
 }
+
+@media screen and (min-width: 320px) {
+   li {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none;
+   }
+   }
 
 li {
    display: flex;
@@ -126,7 +144,7 @@ li {
    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
    #menu {
       background-color: aliceblue;
       display: flex;
@@ -216,7 +234,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
    .productos {
       width: 80%;
       margin: 0 auto;
@@ -243,7 +261,7 @@ h6 {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
    .caja {
       background-color: darksalmon;
       width: 200px;
@@ -357,7 +375,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
    #imagen {
       background-image: url(../imagenes/Pan.jpg);
       height: 15%;
