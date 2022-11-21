@@ -56,6 +56,15 @@ h1 {
    }
 }
 
+@media screen and (min-width: 480px) {
+   footer {
+      text-align: center;
+      background-color: antiquewhite;
+      margin: 30px;
+      font-size: 20px;
+   }
+}
+
 h2,
 h4 {
    font-size: 30px;
@@ -99,6 +108,15 @@ li {
 }
 
 @media screen and (min-width: 768px) {
+   #menu {
+      background-color: aliceblue;
+      display: flex;
+      justify-content: right;
+   }
+}
+
+
+@media screen and (min-width: 480px) {
    #menu {
       background-color: aliceblue;
       display: flex;
@@ -184,6 +202,20 @@ h6 {
       text-align: center;
    }
 }
+
+@media screen and (min-width: 480px) {
+   .productos {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: cornsilk;
+      padding: 20px;
+      border: 1px solid blanchedalmond;
+      text-align: center;
+   }
+}
+
 
 @media screen and (min-width: 768px) {
    .caja {
@@ -300,6 +332,14 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
+   #imagen {
+      background-image: url(../imagenes/Pan.jpg);
+      height: 15%;
+      background-size: cover;
+   }
+}
+
+@media screen and (min-width: 480px) {
    #imagen {
       background-image: url(../imagenes/Pan.jpg);
       height: 15%;
