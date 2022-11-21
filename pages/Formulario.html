@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logoessen.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Formulario</title>
+</head>
+<header>
+    <div id="menu">
+        <ul>
+            <li>
+                <a href="../index.html" style="color:darksalmon">Inicio</a>
+            <li>
+                <a href="../pages/Nuestrahistoria.html" style="color:darksalmon">Nuestra historia</a>
+            </li>
+            <li>
+                <a href="../pages/Productos.html" style="color:darksalmon">Productos</a>
+            </li>
+            <li>
+                <a href="../pages/Recetas.html" style="color:darksalmon">Recetas</a>
+            </li>
+            <li>
+                <a href="../pages/Datosdecontacto.html" style="color:darksalmon">Datos de contacto</a>
+            </li>
+            <li>
+                <a href="../pages/Formulario.html" style="color:darksalmon">Formulario</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body>
+
+    <!-- formulario -->
+    <form>
+        <div class="form-row text-danger">
+            <div class="col-md-4 mb-3">
+                <label for="validationServer01"><strong>Nombre</strong></label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name">
+                <div class="valid-feedback">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 text-danger">
+                <label for="validationServer02"><strong>Apellido</strong></label>
+                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name">
+                <div class="valid-feedback">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 text-danger">
+                <label for="validationServerUsername"><strong>Usuario</strong< /label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            </div>
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3 text-danger">
+                <label for="validationServer03"><strong>Ciudad</strong></label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 text-danger">
+                <label for="validationServer04">País</label>
+                <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+                <div class="invalid-feedback">
+                    <br>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+
+    <footer>Todos los derechos son reservados.</footer>
+
+    <div class="informacion">
+        <img src="../imagenes/wsp.png" width="25" height="25" alt="">
+
+
+        <img src="../imagenes/gmail.png" width="25" height="25" alt="">
+
+
+        <img src="../imagenes/ig.png" width="25" height="25" alt="">
+
+    </div>
+
+
+</html>
