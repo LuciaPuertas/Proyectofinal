@@ -38,7 +38,7 @@ h1 {
    font-size: 200%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
    footer {
       text-align: center;
       background-color: antiquewhite;
@@ -56,7 +56,7 @@ h1 {
    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
    footer {
       text-align: center;
       background-color: antiquewhite;
@@ -116,7 +116,7 @@ li {
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
    #menu {
       background-color: aliceblue;
       display: flex;
@@ -177,7 +177,7 @@ h6 {
    background-color: darksalmon;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
    .productos {
       width: 80%;
       margin: 0 auto;
@@ -203,7 +203,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
    .productos {
       width: 80%;
       margin: 0 auto;
@@ -228,7 +228,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
    .caja {
       background-color: darksalmon;
       width: 200px;
@@ -239,7 +239,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
    .caja {
       background-color: darksalmon;
       width: 200px;
@@ -323,7 +323,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
    #imagen {
       background-image: url(../imagenes/Pan.jpg);
       height: 15%;
@@ -339,7 +339,7 @@ h6 {
    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
    #imagen {
       background-image: url(../imagenes/Pan.jpg);
       height: 15%;
