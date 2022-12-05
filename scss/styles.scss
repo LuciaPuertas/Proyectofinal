@@ -1,0 +1,330 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+//hojas secundarias
+
+@import "footer.scss";
+@import "variables.scss";
+@import "_mediaqueries.scss";
+
+//nesting
+
+#menu {
+    @include mobile {
+        background-color: $color-text;
+        display: flex;
+        justify-content: right;
+    }
+
+    li {
+        @include mobile {
+            display: flex;
+            font-size: 100%;
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        @include mobile {
+            display: flex;
+            font-size: 120%;
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+
+    li a {
+        @include mobile {
+            display: block;
+            padding: 10px 10px;
+        }
+
+        &:hover {
+            @include mobile {
+                background-color: lightsalmon;
+                color: $color-principal;
+            }
+        }
+    }
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+.productos {
+    @include mobile {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: cornsilk;
+        padding: 20px;
+        border: 1px solid blanchedalmond;
+        text-align: center;
+    }
+}
+
+.caja {
+    @include mobile {
+        background-color: $color-principal;
+        width: 200px;
+        height: 200px;
+        border: 4px solid blanchedalmond;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+.caja {
+    @include intermedia {
+        background-color: $color-principal;
+        width: 200px;
+        height: 200px;
+        border: 4px solid blanchedalmond;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .caja {
+        @include escritorio {
+            background-color: $color-principal;
+            width: 200px;
+            height: 200px;
+            border: 4px solid blanchedalmond;
+            margin: auto;
+            padding: 10px;
+        }
+    }
+}
+
+
+.recetas {
+    @include mobile {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 20px;
+        color: beige;
+        margin: 20px;
+        text-align: right center;
+    }
+
+    @include intermedia {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 20px;
+        color: beige;
+        margin: 20px;
+        text-align: right center;
+    }
+
+    @include escritorio {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 20px;
+        color: beige;
+        margin: 20px;
+        text-align: right center;
+    }
+}
+
+.preparacion {
+    @include mobile {
+        font-size: 20px;
+        color: beige;
+        margin: 20px;
+        text-align: right center;
+        display: grid;
+        grid-template-columns: auto auto;
+        border-color: beige;
+    }
+
+    @include intermedia {
+        font-size: 20px;
+        color: beige;
+        margin: 20px;
+        text-align: right center;
+        display: grid;
+        grid-template-columns: auto auto;
+        border-color: beige;
+    }
+
+    @include escritorio {
+        font-size: 20px;
+        color: beige;
+        margin: 20px;
+        text-align: right center;
+        display: grid;
+        grid-template-columns: auto auto;
+        border-color: beige;
+    }
+}
+
+.historia {
+    font-size: 20px;
+    color: $color-text;
+    margin: 20px;
+    text-align: right center;
+    background-color: $color-principal; 
+}
+
+/* estilos del fondo */
+
+body {
+    background-color: $color-principal;
+}
+
+main {
+    background-color: $color-principal;
+}
+
+header {
+    background-color: $color-principal;
+}
+
+nav {
+    background-color: $color-principal;
+}
+
+.pagina {
+    background-color: $color-principal;
+}
+
+
+/* archivos multimedia*/
+
+#imagen {
+    background-image: url(../imagenes/Pan.jpg);
+    height: 708px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.link {
+    text-align: right;
+    font-size: 125%;
+}
+
+.videos {
+    position: inherit;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    margin: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video {
+    position: inherit;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    margin: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    transform: skewY(5deg);
+}
+
+form {
+    @include mobile {
+        height: 665px;
+        background-image: url(../imagenes/empresa.jpg);
+        background-repeat: no-repeat;
+        background-size: 100rem;
+    }
+
+    @include intermedia {
+        height: 665px;
+        background-image: url(../imagenes/empresa.jpg);
+        background-repeat: no-repeat;
+        background-size: 100rem;
+    }
+
+    @include escritorio {
+        height: 665px;
+        background-image: url(../imagenes/empresa.jpg);
+        background-repeat: no-repeat;
+        background-size: 100rem;
+    }
+}
+
+.contacto {
+    background-color: $color-principal;
+    list-style-type: none;
+    display: inline-flex;
+    float: left;
+
+    li,
+    p {
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+}
+
+.mapa {
+    position: relative;
+    top: 0;
+    left: 20%;
+    right: 80%;
+    bottom: 0;
+    margin: 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* estilos de texto*/
+
+h1 {
+    background-color: cornsilk;
+    margin: 15px;
+    text-align: center;
+    color: $color-text;
+    font-size: 200%;
+
+    &:hover {
+        @include mobile {
+            background-color: $color-principal;
+            color: $color-text;
+        }
+    }
+}
+
+h2 {
+    color: beige;
+    margin: 20px;
+    font-size: 50px;
+}
+
+h4 {
+    text-align: center;
+    margin: 70px;
+    color: beige;
+    margin: 20px;
+    font-size: 50px;
+}
+
+
+h5,
+h6 {
+    color: $color-text;
+    margin: 40px;
+    font-size: 30px;
+    background-color: $color-principal;
+    text-align: center;
+}

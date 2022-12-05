@@ -1,429 +1,276 @@
 /* reset */
-
 * {
-   margin: 0;
-   padding-left: 0;
-   box-sizing: border-box;
-}
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box; }
 
+footer {
+  text-align: center;
+  background-color: antiquewhite;
+  margin: 30px;
+  font-size: 20px; }
 
-/* linea de comentario */
+.informacion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
 
-h2 {
-   margin: 10px;
-}
+@media only screen and (min-width: 480px) {
+  #menu {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: right; } }
 
-body {
-   background-color: darksalmon;
-}
+@media only screen and (min-width: 480px) {
+  #menu li {
+    display: flex;
+    font-size: 100%;
+    list-style-type: none;
+    text-decoration: none; } }
 
-main {
-   background-color: indianred;
-}
+@media only screen and (min-width: 480px) {
+  #menu ul {
+    display: flex;
+    font-size: 120%;
+    list-style-type: none;
+    text-decoration: none; } }
 
-header {
-   background-color: darksalmon;
-}
+@media only screen and (min-width: 480px) {
+  #menu li a {
+    display: block;
+    padding: 10px 10px; } }
 
-@media screen and (min-width: 320px) {
-   nav {
-      background-color: darksalmon;
-   }
-}
-
-@media screen and (min-width: 600px) {
-   nav {
-      background-color: darksalmon;
-   }
-}
-
-@media screen and (min-width: 1024px) {
-   nav {
-      background-color: darksalmon;
-   }
-}
-
-nav {
-   background-color: darksalmon;
-}
-
-h1 {
-   background-color: cornsilk;
-   margin: 15px;
-   text-align: center;
-   color: aliceblue;
-   font-size: 200%;
-}
-
-@media screen and (min-width: 1024px) {
-   footer {
-      text-align: center;
-      background-color: antiquewhite;
-      margin: 30px;
-      font-size: 20px;
-   }
-}
-
-@media screen and (min-width: 600px) {
-   footer {
-      text-align: center;
-      background-color: antiquewhite;
-      margin: 30px;
-      font-size: 20px;
-   }
-}
-
-@media screen and (min-width: 320px) {
-   footer {
-      text-align: center;
-      background-color: antiquewhite;
-      margin: 30px;
-      font-size: 20px;
-   }
-}
-
-h2,
-h4 {
-   font-size: 30px;
-   color: beige;
-   margin: 20px;
-}
-
-h4 {
-   text-align: center;
-   margin: 70px;
-}
+@media only screen and (min-width: 480px) {
+  #menu li a:hover {
+    background-color: lightsalmon;
+    color: darksalmon; } }
 
 a:link {
-   text-decoration: none;
-}
+  text-decoration: none; }
 
 a:visited {
-   text-decoration: none;
-}
+  text-decoration: none; }
 
-@media screen and (min-width: 600px) {
-   ul {
-      display: flex;
-      font-size: 120%;
-      list-style-type: none;
-      text-decoration: none;
-   }
-}
+@media only screen and (min-width: 480px) {
+  .productos {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: cornsilk;
+    padding: 20px;
+    border: 1px solid blanchedalmond;
+    text-align: center; } }
 
-@media screen and (min-width: 320px) {
-   ul {
-      display: flex;
-      font-size: 120%;
-      list-style-type: none;
-      text-decoration: none;
-   }
-}
+@media only screen and (min-width: 480px) {
+  .caja {
+    background-color: darksalmon;
+    width: 200px;
+    height: 200px;
+    border: 4px solid blanchedalmond;
+    margin: auto;
+    padding: 10px; } }
 
-ul {
-   display: flex;
-   font-size: 120%;
-   list-style-type: none;
-   text-decoration: none;
-}
+@media only screen and (min-width: 768px) {
+  .caja {
+    background-color: darksalmon;
+    width: 200px;
+    height: 200px;
+    border: 4px solid blanchedalmond;
+    margin: auto;
+    padding: 10px; } }
 
-@media screen and (min-width: 600px) {
-   li {
-      display: flex;
-      font-size: 100%;
-      list-style-type: none;
-      text-decoration: none;
-   }
-}
+@media only screen and (min-width: 1200px) {
+  .caja .caja {
+    background-color: darksalmon;
+    width: 200px;
+    height: 200px;
+    border: 4px solid blanchedalmond;
+    margin: auto;
+    padding: 10px; } }
 
-@media screen and (min-width: 320px) {
-   li {
-      display: flex;
-      font-size: 100%;
-      list-style-type: none;
-      text-decoration: none;
-   }
-}
+@media only screen and (min-width: 480px) {
+  .recetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    color: beige;
+    margin: 20px;
+    text-align: right center; } }
 
-li {
-   display: flex;
-   font-size: 100%;
-   list-style-type: none;
-   text-decoration: none;
-}
+@media only screen and (min-width: 768px) {
+  .recetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    color: beige;
+    margin: 20px;
+    text-align: right center; } }
 
+@media only screen and (min-width: 1200px) {
+  .recetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    color: beige;
+    margin: 20px;
+    text-align: right center; } }
 
-@media screen and (min-width: 1024px) {
-   #menu {
-      background-color: aliceblue;
-      display: flex;
-      justify-content: right;
-   }
-}
+@media only screen and (min-width: 480px) {
+  .preparacion {
+    font-size: 20px;
+    color: beige;
+    margin: 20px;
+    text-align: right center;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-color: beige; } }
 
-@media screen and (min-width: 600px) {
-   #menu {
-      background-color: aliceblue;
-      display: flex;
-      justify-content: right;
-   }
-}
+@media only screen and (min-width: 768px) {
+  .preparacion {
+    font-size: 20px;
+    color: beige;
+    margin: 20px;
+    text-align: right center;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-color: beige; } }
 
+@media only screen and (min-width: 1200px) {
+  .preparacion {
+    font-size: 20px;
+    color: beige;
+    margin: 20px;
+    text-align: right center;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-color: beige; } }
 
-@media screen and (min-width: 320px) {
-   #menu {
-      background-color: aliceblue;
-      display: flex;
-      justify-content: right;
-   }
-}
+.historia {
+  font-size: 20px;
+  color: aliceblue;
+  margin: 20px;
+  text-align: right center;
+  background-color: darksalmon; }
 
-#menu {
-   background-color: aliceblue;
-   display: flex;
-   justify-content: right;
-}
+/* estilos del fondo */
+body {
+  background-color: darksalmon; }
 
-@media screen and (min-width: 320px) {
-   #menu li a {
-      display: block;
-      padding: 10px 10px;
-   }
-}
+main {
+  background-color: darksalmon; }
 
-@media screen and (min-width: 600px) {
-   #menu li a {
-      display: block;
-      padding: 10px 10px;
-   }
-}
+header {
+  background-color: darksalmon; }
 
-#menu li a {
-   display: block;
-   padding: 10px 10px;
-}
+nav {
+  background-color: darksalmon; }
 
-#menu li a:hover {
-   background-color: lightsalmon;
-   color: darksalmon;
-}
+.pagina {
+  background-color: darksalmon; }
 
-.mapa {
-   position: relative;
-   top: 0;
-   left: 50%;
-   right: 50%;
-   bottom: 0;
-   margin: 0px;
-   max-width: 100%;
-   max-height: 100%;
-}
+/* archivos multimedia*/
+#imagen {
+  background-image: url(../imagenes/Pan.jpg);
+  height: 708px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
-main1 {
-   margin: 50px;
-   width: 200px;
-}
+.link {
+  text-align: right;
+  font-size: 125%; }
+
+.videos {
+  position: inherit;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%; }
+
+.video {
+  position: inherit;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  transform: skewY(5deg); }
+
+@media only screen and (min-width: 480px) {
+  form {
+    height: 665px;
+    background-image: url(../imagenes/empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100rem; } }
+
+@media only screen and (min-width: 768px) {
+  form {
+    height: 665px;
+    background-image: url(../imagenes/empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100rem; } }
+
+@media only screen and (min-width: 1200px) {
+  form {
+    height: 665px;
+    background-image: url(../imagenes/empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100rem; } }
 
 .contacto {
-   background-color: darksalmon;
-   list-style-type: none;
-   display: inline-flexbox;
-   float: left;
-}
+  background-color: darksalmon;
+  list-style-type: none;
+  display: inline-flex;
+  float: left; }
+  .contacto li,
+  .contacto p {
+    line-height: 1.5;
+    font-size: 1.5rem; }
+
+.mapa {
+  position: relative;
+  top: 0;
+  left: 20%;
+  right: 80%;
+  bottom: 0;
+  margin: 0px;
+  max-width: 100%;
+  max-height: 100%; }
+
+/* estilos de texto*/
+h1 {
+  background-color: cornsilk;
+  margin: 15px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 200%; }
+  @media only screen and (min-width: 480px) {
+    h1:hover {
+      background-color: darksalmon;
+      color: aliceblue; } }
+
+h2 {
+  color: beige;
+  margin: 20px;
+  font-size: 50px; }
+
+h4 {
+  text-align: center;
+  margin: 70px;
+  color: beige;
+  margin: 20px;
+  font-size: 50px; }
 
 h5,
 h6 {
-   color: aliceblue;
-   margin: 50px;
-   font-size: large;
-   font-family: cursive;
-   background-color: darksalmon;
-   text-align: center;
-}
-
-.pagina {
-   background-color: darksalmon;
-}
-
-@media screen and (min-width: 1024px) {
-   .productos {
-      width: 80%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: cornsilk;
-      padding: 20px;
-      border: 1px solid blanchedalmond;
-      text-align: center;
-   }
-}
-
-@media screen and (min-width: 600px) {
-   .productos {
-      width: 80%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: cornsilk;
-      padding: 20px;
-      border: 1px solid blanchedalmond;
-      text-align: center;
-   }
-}
-
-@media screen and (min-width: 320px) {
-   .productos {
-      width: 80%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: cornsilk;
-      padding: 20px;
-      border: 1px solid blanchedalmond;
-      text-align: center;
-   }
-}
-
-
-@media screen and (min-width: 600px) {
-   .caja {
-      background-color: darksalmon;
-      width: 200px;
-      height: 200px;
-      border: 4px solid blanchedalmond;
-      margin: auto;
-      padding: 10px;
-   }
-}
-
-@media screen and (min-width: 1024px) {
-   .caja {
-      background-color: darksalmon;
-      width: 200px;
-      height: 200px;
-      border: 4px solid blanchedalmond;
-      margin: auto;
-      padding: 10px;
-   }
-}
-
-@media screen and (min-width: 320px) {
-   .caja {
-      background-color: darksalmon;
-      width: 200px;
-      height: 200px;
-      border: 4px solid blanchedalmond;
-      margin: auto;
-      padding: 10px;
-   }
-}
-
-.preparacion {
-   font-size: 20px;
-   color: beige;
-   margin: 20px;
-   text-align: right center;
-   display: grid;
-   grid-template-columns: auto auto;
-   border-color: beige;
-}
-
-
-.video {
-   position: static;
-   top: 0;
-   left: 50%;
-   right: 50%;
-   bottom: 0;
-   margin: 100px;
-   max-width: 100%;
-   max-height: 100%;
-   display: inline-block
-}
-
-.videos {
-   position: inherit;
-   top: 0;
-   left: 50%;
-   right: 50%;
-   bottom: 0;
-   margin: 10px;
-   max-width: 100%;
-   max-height: 100%;
-}
-
-.historia {
-   font-size: 20px;
-   color: beige;
-   margin: 20px;
-   text-align: right center;
-   background-color: darksalmon;
-}
-
-.link {
-   text-align: right;
-   font-size: 125%;
-}
-
-.recetas {
-   display: grid;
-   grid-template-columns: auto auto;
-   font-size: 20px;
-   color: beige;
-   margin: 20px;
-   text-align: right center;
-}
-
-.historia {
-   animation-duration: 3s;
-   animation-name: slidein;
-}
-
-@keyframes slidein {
-   from {
-      margin-left: 100%;
-      width: 300%
-   }
-
-   to {
-      margin-left: 0%;
-      width: 100%;
-   }
-}
-
-@media screen and (min-width: 1024px) {
-   #imagen {
-      background-image: url(../imagenes/Pan.jpg);
-      height: 15%;
-      background-size: cover;
-   }
-}
-
-@media screen and (min-width: 600px) {
-   #imagen {
-      background-image: url(../imagenes/Pan.jpg);
-      height: 15%;
-      background-size: cover;
-   }
-}
-
-@media screen and (min-width: 320px) {
-   #imagen {
-      background-image: url(../imagenes/Pan.jpg);
-      height: 15%;
-      background-size: cover;
-   }
-}
-
-.informacion {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-}
-
-form {
-   height: 665px;
-   background-image: url(../imagenes/empresa.jpg);
-   background-repeat: no-repeat;
-   background-size: 100rem;
-}
+  color: aliceblue;
+  margin: 40px;
+  font-size: 30px;
+  background-color: darksalmon;
+  text-align: center; }
