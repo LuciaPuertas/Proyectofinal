@@ -15,6 +15,34 @@
 //nesting
 
 #menu {
+    background-color: $color-text;
+    display: flex;
+    justify-content: right;
+
+    li {
+        display: flex;
+        font-size: 100%;
+        list-style-type: none;
+        text-decoration: none;
+
+        ul {
+            display: flex;
+            font-size: 120%;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        li a {
+            display: block;
+            padding: 10px 10px;
+        }
+
+        &:hover {
+            background-color: lightsalmon;
+            color: $color-principal;
+        }
+    }
+
     @include mobile {
         background-color: $color-text;
         display: flex;
@@ -27,31 +55,33 @@
         justify-content: right;
     }
 
-     @include intermedia {
+    @include intermedia {
         background-color: $color-text;
         display: flex;
         justify-content: right;
-        }
- }
-    li {
-        @include mobilepeq {
-            display: flex;
-            font-size: 100%;
-            list-style-type: none;
-            text-decoration: none;
-             }
+    }
+}
 
-        @include mobile {
-            display: flex;
-            font-size: 100%;
-            list-style-type: none;
-            text-decoration: none;
-        }
-        @include intermedia {
-            display: flex;
-            font-size: 100%;
-            list-style-type: none;
-            text-decoration: none;
+li {
+    @include mobilepeq {
+        display: flex;
+        font-size: 100%;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    @include mobile {
+        display: flex;
+        font-size: 100%;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    @include intermedia {
+        display: flex;
+        font-size: 100%;
+        list-style-type: none;
+        text-decoration: none;
     }
 
     ul {
@@ -60,7 +90,7 @@
             font-size: 120%;
             list-style-type: none;
             text-decoration: none;
-            }
+        }
 
         @include mobile {
             display: flex;
@@ -207,7 +237,7 @@ a:visited {
     color: $color-text;
     margin: 20px;
     text-align: right center;
-    background-color: $color-principal; 
+    background-color: $color-principal;
 }
 
 /* estilos del fondo */
