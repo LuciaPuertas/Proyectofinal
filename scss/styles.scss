@@ -21,16 +21,47 @@
         justify-content: right;
     }
 
+    @include mobilepeq {
+        background-color: $color-text;
+        display: flex;
+        justify-content: right;
+    }
+
+     @include intermedia {
+        background-color: $color-text;
+        display: flex;
+        justify-content: right;
+        }
+ }
     li {
+        @include mobilepeq {
+            display: flex;
+            font-size: 100%;
+            list-style-type: none;
+            text-decoration: none;
+             }
+
         @include mobile {
             display: flex;
             font-size: 100%;
             list-style-type: none;
             text-decoration: none;
         }
+        @include intermedia {
+            display: flex;
+            font-size: 100%;
+            list-style-type: none;
+            text-decoration: none;
     }
 
     ul {
+        @include mobilepeq {
+            display: flex;
+            font-size: 120%;
+            list-style-type: none;
+            text-decoration: none;
+            }
+
         @include mobile {
             display: flex;
             font-size: 120%;
