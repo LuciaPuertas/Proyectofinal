@@ -1,0 +1,212 @@
+/* reset */
+* {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box; }
+
+footer {
+  text-align: center;
+  background-color: antiquewhite;
+  margin: 30px;
+  font-size: 20px; }
+
+.informacion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+#menu {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: right; }
+  #menu li {
+    display: flex;
+    font-size: 100%;
+    list-style-type: none;
+    text-decoration: none; }
+    #menu li ul {
+      display: flex;
+      font-size: 120%;
+      list-style-type: none;
+      text-decoration: none; }
+    #menu li li a {
+      display: block;
+      padding: 10px 10px; }
+    #menu li:hover {
+      background-color: lightsalmon;
+      color: darksalmon; }
+  #menu a:link {
+    text-decoration: none; }
+  #menu a:visited {
+    text-decoration: none; }
+  @media screen and (min-width: 468px) {
+    #menu #menu {
+      background-color: aliceblue;
+      display: flex;
+      justify-content: right; } }
+  @media screen and (min-width: 468px) {
+    #menu li {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; } }
+  @media screen and (min-width: 468px) {
+    #menu ul {
+      display: flex;
+      font-size: 120%;
+      list-style-type: none;
+      text-decoration: none; } }
+  @media screen and (min-width: 468px) {
+    #menu li a {
+      display: block;
+      padding: 10px 10px; } }
+  @media screen and (min-width: 468px) {
+    #menu:hover {
+      background-color: lightsalmon;
+      color: darksalmon; } }
+  #menu .productos {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: cornsilk;
+    padding: 20px;
+    border: 1px solid blanchedalmond;
+    text-align: center; }
+  #menu .caja {
+    background-color: darksalmon;
+    width: 200px;
+    height: 200px;
+    border: 4px solid blanchedalmond;
+    margin: auto;
+    padding: 10px; }
+
+.recetas {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 20px;
+  color: beige;
+  margin: 20px;
+  text-align: right center; }
+
+.preparacion {
+  font-size: 20px;
+  color: beige;
+  margin: 20px;
+  text-align: right center;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-color: beige; }
+
+.historia {
+  font-size: 20px;
+  color: aliceblue;
+  margin: 20px;
+  text-align: right center;
+  background-color: darksalmon; }
+
+/* estilos del fondo */
+body {
+  background-color: darksalmon; }
+
+main {
+  background-color: darksalmon; }
+
+header {
+  background-color: darksalmon; }
+
+nav {
+  background-color: darksalmon; }
+
+.pagina {
+  background-color: darksalmon; }
+
+/* archivos multimedia*/
+#imagen {
+  background-image: url(../imagenes/Pan.jpg);
+  height: 708px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.link {
+  text-align: right;
+  font-size: 125%; }
+
+.videos {
+  position: inherit;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%; }
+
+.video {
+  position: inherit;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  transform: skewY(5deg); }
+
+form {
+  height: 665px;
+  background-image: url(../imagenes/empresa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem; }
+
+.contacto {
+  background-color: darksalmon;
+  list-style-type: none;
+  display: inline-flex;
+  float: left; }
+  .contacto li,
+  .contacto p {
+    line-height: 1.5;
+    font-size: 1.5rem; }
+
+.mapa {
+  position: relative;
+  top: 0;
+  left: 20%;
+  right: 80%;
+  bottom: 0;
+  margin: 0px;
+  max-width: 100%;
+  max-height: 100%; }
+
+/* estilos de texto*/
+h1 {
+  background-color: cornsilk;
+  margin: 15px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 200%; }
+  h1:hover {
+    background-color: darksalmon;
+    color: aliceblue; }
+
+h2 {
+  color: beige;
+  margin: 20px;
+  font-size: 50px; }
+
+h4 {
+  text-align: center;
+  margin: 70px;
+  color: beige;
+  margin: 20px;
+  font-size: 50px; }
+
+h5,
+h6 {
+  color: aliceblue;
+  margin: 40px;
+  font-size: 30px;
+  background-color: darksalmon;
+  text-align: center; }
