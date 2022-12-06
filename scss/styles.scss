@@ -50,36 +50,45 @@
         text-decoration: none;
     }
 
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 468px) {
         #menu {
             background-color: $color-text;
             display: flex;
             justify-content: right;
-         }
-            li {
-                display: flex;
-                font-size: 100%;
-                list-style-type: none;
-                text-decoration: none;
-        
-                ul {
-                    display: flex;
-                    font-size: 120%;
-                    list-style-type: none;
-                    text-decoration: none;
-                }
-        
-                li a {
-                    display: block;
-                    padding: 10px 10px;
-                }
-        
-                &:hover {
-                    background-color: lightsalmon;
-                    color: $color-principal;
-                }
-            }
-         }
+        }
+    }
+
+    @media screen and (min-width: 468px) {
+        li {
+            display: flex;
+            font-size: 100%;
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (min-width: 468px) {
+        ul {
+            display: flex;
+            font-size: 120%;
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (min-width: 468px) {
+        li a {
+            display: block;
+            padding: 10px 10px;
+        }
+    }
+
+    @media screen and (min-width: 468px) {
+        &:hover {
+            background-color: lightsalmon;
+            color: $color-principal;
+        }
+    }
 
     .productos {
         width: 80%;
