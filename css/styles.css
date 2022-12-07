@@ -15,136 +15,87 @@ footer {
   justify-content: space-evenly;
   align-items: center; }
 
-@media only screen and (min-width: 480px) {
-  #menu {
-    background-color: aliceblue;
-    display: flex;
-    justify-content: right; } }
-
-@media only screen and (min-width: 480px) {
+#menu {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: right; }
   #menu li {
     display: flex;
     font-size: 100%;
     list-style-type: none;
-    text-decoration: none; } }
+    text-decoration: none; }
+    #menu li ul {
+      display: flex;
+      font-size: 120%;
+      list-style-type: none;
+      text-decoration: none; }
+    #menu li li a {
+      display: block;
+      padding: 10px 10px; }
+    #menu li:hover {
+      background-color: antiquewhite;
+      color: darksalmon; }
+  #menu a:link {
+    text-decoration: none; }
+  #menu a:visited {
+    text-decoration: none; }
+  @media screen and (min-width: 468px) {
+    #menu #menu {
+      background-color: aliceblue;
+      display: flex;
+      justify-content: right; } }
+  @media screen and (min-width: 468px) {
+    #menu li {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; } }
+  @media screen and (min-width: 468px) {
+    #menu ul {
+      display: flex;
+      font-size: 120%;
+      list-style-type: none;
+      text-decoration: none; } }
+  @media screen and (min-width: 468px) {
+    #menu li a {
+      display: block;
+      padding: 10px 10px; } }
 
-@media only screen and (min-width: 480px) {
-  #menu ul {
-    display: flex;
-    font-size: 120%;
-    list-style-type: none;
-    text-decoration: none; } }
+.recetas {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 20px;
+  color: beige;
+  margin: 20px;
+  text-align: right center; }
 
-@media only screen and (min-width: 480px) {
-  #menu li a {
-    display: block;
-    padding: 10px 10px; } }
+.preparacion {
+  font-size: 20px;
+  color: beige;
+  margin: 20px;
+  text-align: right center;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-color: beige; }
 
-@media only screen and (min-width: 480px) {
-  #menu li a:hover {
-    background-color: lightsalmon;
-    color: darksalmon; } }
+/* columnas */
+.caja {
+  background-color: darksalmon;
+  width: 200px;
+  height: 200px;
+  border: 4px solid blanchedalmond;
+  margin: auto;
+  padding: 10px; }
 
-a:link {
-  text-decoration: none; }
-
-a:visited {
-  text-decoration: none; }
-
-@media only screen and (min-width: 480px) {
-  .productos {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: cornsilk;
-    padding: 20px;
-    border: 1px solid blanchedalmond;
-    text-align: center; } }
-
-@media only screen and (min-width: 480px) {
-  .caja {
-    background-color: darksalmon;
-    width: 200px;
-    height: 200px;
-    border: 4px solid blanchedalmond;
-    margin: auto;
-    padding: 10px; } }
-
-@media only screen and (min-width: 768px) {
-  .caja {
-    background-color: darksalmon;
-    width: 200px;
-    height: 200px;
-    border: 4px solid blanchedalmond;
-    margin: auto;
-    padding: 10px; } }
-
-@media only screen and (min-width: 1200px) {
-  .caja .caja {
-    background-color: darksalmon;
-    width: 200px;
-    height: 200px;
-    border: 4px solid blanchedalmond;
-    margin: auto;
-    padding: 10px; } }
-
-@media only screen and (min-width: 480px) {
-  .recetas {
-    display: grid;
-    grid-template-columns: auto auto;
-    font-size: 20px;
-    color: beige;
-    margin: 20px;
-    text-align: right center; } }
-
-@media only screen and (min-width: 768px) {
-  .recetas {
-    display: grid;
-    grid-template-columns: auto auto;
-    font-size: 20px;
-    color: beige;
-    margin: 20px;
-    text-align: right center; } }
-
-@media only screen and (min-width: 1200px) {
-  .recetas {
-    display: grid;
-    grid-template-columns: auto auto;
-    font-size: 20px;
-    color: beige;
-    margin: 20px;
-    text-align: right center; } }
-
-@media only screen and (min-width: 480px) {
-  .preparacion {
-    font-size: 20px;
-    color: beige;
-    margin: 20px;
-    text-align: right center;
-    display: grid;
-    grid-template-columns: auto auto;
-    border-color: beige; } }
-
-@media only screen and (min-width: 768px) {
-  .preparacion {
-    font-size: 20px;
-    color: beige;
-    margin: 20px;
-    text-align: right center;
-    display: grid;
-    grid-template-columns: auto auto;
-    border-color: beige; } }
-
-@media only screen and (min-width: 1200px) {
-  .preparacion {
-    font-size: 20px;
-    color: beige;
-    margin: 20px;
-    text-align: right center;
-    display: grid;
-    grid-template-columns: auto auto;
-    border-color: beige; } }
+.productos {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: cornsilk;
+  padding: 20px;
+  border: 1px solid blanchedalmond;
+  text-align: center; }
 
 .historia {
   font-size: 20px;
@@ -169,7 +120,7 @@ nav {
 .pagina {
   background-color: darksalmon; }
 
-/* archivos multimedia*/
+/* archivos multimedia */
 #imagen {
   background-image: url(../imagenes/Pan.jpg);
   height: 708px;
@@ -191,6 +142,7 @@ nav {
   max-width: 100%;
   max-height: 100%; }
 
+/* video con transformacion */
 .video {
   position: inherit;
   top: 0;
@@ -202,26 +154,11 @@ nav {
   max-height: 100%;
   transform: skewY(5deg); }
 
-@media only screen and (min-width: 480px) {
-  form {
-    height: 665px;
-    background-image: url(../imagenes/empresa.jpg);
-    background-repeat: no-repeat;
-    background-size: 100rem; } }
-
-@media only screen and (min-width: 768px) {
-  form {
-    height: 665px;
-    background-image: url(../imagenes/empresa.jpg);
-    background-repeat: no-repeat;
-    background-size: 100rem; } }
-
-@media only screen and (min-width: 1200px) {
-  form {
-    height: 665px;
-    background-image: url(../imagenes/empresa.jpg);
-    background-repeat: no-repeat;
-    background-size: 100rem; } }
+form {
+  height: 665px;
+  background-image: url(../imagenes/empresa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem; }
 
 .contacto {
   background-color: darksalmon;
@@ -250,10 +187,9 @@ h1 {
   text-align: center;
   color: aliceblue;
   font-size: 200%; }
-  @media only screen and (min-width: 480px) {
-    h1:hover {
-      background-color: darksalmon;
-      color: aliceblue; } }
+  h1:hover {
+    background-color: darksalmon;
+    color: darksalmon; }
 
 h2 {
   color: beige;

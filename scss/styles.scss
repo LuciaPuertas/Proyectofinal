@@ -14,7 +14,7 @@
 //nesting
 
 #menu {
-    background-color: $color-text;
+    background-color: aliceblue;
     display: flex;
     justify-content: right;
 
@@ -37,7 +37,7 @@
         }
 
         &:hover {
-            background-color: lightsalmon;
+            background-color: antiquewhite;
             color: $color-principal;
         }
     }
@@ -82,33 +82,6 @@
             padding: 10px 10px;
         }
     }
-
-    @media screen and (min-width: 468px) {
-        &:hover {
-            background-color: lightsalmon;
-            color: $color-principal;
-        }
-    }
-
-    .productos {
-        width: 80%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: cornsilk;
-        padding: 20px;
-        border: 1px solid blanchedalmond;
-        text-align: center;
-    }
-
-    .caja {
-        background-color: $color-principal;
-        width: 200px;
-        height: 200px;
-        border: 4px solid blanchedalmond;
-        margin: auto;
-        padding: 10px;
-    }
 }
 
 .recetas {
@@ -130,6 +103,28 @@
     border-color: beige;
 }
 
+/* columnas */
+
+.caja {
+    background-color: $color-principal;
+    width: 200px;
+    height: 200px;
+    border: 4px solid blanchedalmond;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.productos {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: cornsilk;
+    padding: 20px;
+    border: 1px solid blanchedalmond;
+    text-align: center;
+}
 
 .historia {
     font-size: 20px;
@@ -161,8 +156,7 @@ nav {
     background-color: $color-principal;
 }
 
-
-/* archivos multimedia*/
+/* archivos multimedia */
 
 #imagen {
     background-image: url(../imagenes/Pan.jpg);
@@ -187,6 +181,8 @@ nav {
     max-width: 100%;
     max-height: 100%;
 }
+
+/* video con transformacion */
 
 .video {
     position: inherit;
@@ -240,10 +236,9 @@ h1 {
     text-align: center;
     color: $color-text;
     font-size: 200%;
-
     &:hover {
         background-color: $color-principal;
-        color: $color-text;
+        color: $color-principal;
     }
 }
 
