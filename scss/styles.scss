@@ -43,6 +43,10 @@
         padding: 10px 10px;
     }
 
+    .link {
+        text-align: center;
+         }
+
     a:link {
         text-decoration: none;
     }
@@ -383,19 +387,20 @@ align-items: center;
         }
 
         @include mobile {  
-        a:link {
-            text-decoration: none;
+        .link {
+            text-align: center;
         }
      }
 
      @include tablet {  
-        a:link {
-            text-decoration: none;
+       .link {
+            text-align: center;
         }
      }
 
      @include escritorio {  
-        a:link {
-            text-decoration: none;
+        .link {
+            text-align: center;
         }
      }
+     
