@@ -433,3 +433,13 @@ h1 {
         font-size: 20px;
     }
 }
+
+@include mobile {
+.derechos {
+    text-align: center;
+    background-color: $color5;
+    margin: 0px;
+    font-size: 10px;
+    display: flex;
+}
+ }
