@@ -410,8 +410,8 @@ h1 {
 @include mobile {
     .caja {
         background-color: none;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         border: 4px solid blanchedalmond;
         margin: auto;
         padding: 10px;
@@ -421,7 +421,7 @@ h1 {
 
 @include mobile {
     .productos {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         display: inline-block;
@@ -439,6 +439,6 @@ h1 {
     text-align: center;
     background-color: $color5;
     margin: 0px;
-    font-size: 10px;
+    font-size: 15px;
 }
  }
