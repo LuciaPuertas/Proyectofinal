@@ -5,48 +5,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content= "Productos en venta">
+    <meta name="description" content="Productos en venta">     
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="olla,bifera,flip,budinera,accesorios,sarten,cacerola,mate,wok,asadera,savarin">
     <link rel="icon" href="../imagenes/logoessen.png">
     <!-- link de tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>Productos</title>
 </head>
 <header>
-    <div id="menu">
-        <ul>
-            <li>
-                <a href="../index.html" style="color:darksalmon">Inicio</a>
-            <li>
-                <a href="../pages/Nuestrahistoria.html" style="color:darksalmon">Historia</a>
-            </li>
-            <li>
-                <a href="../pages/Productos.html" style="color:darksalmon">Productos</a>
-            </li>
-            <li>
-                <a href="../pages/Recetas.html" style="color:darksalmon">Recetas</a>
-            </li>
-            <li>
-                <a href="../pages/Datosdecontacto.html" style="color:darksalmon">Contacto</a>
-            </li>
-            <li>
-                <a href="../pages/Formulario.html" style="color:darksalmon">Formulario</a>
-            </li>
-        </ul>
+    <img src="../imagenes/logoessen.png" width="50" height="50" alt="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+      <img src="../imagenes/logoessen.png" width="30" height="30" alt="logoessen">
+    </a>
+    
+    <!-- enlaces --> 
+    <!-- menu de navegacion-->
+    <div class="collapse navbar-collapse" id="opciones">   
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html" style="color:#f38630;">Inicio</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/Nuestrahistoria.html" style="color:#f38630;">Historia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/Recetas.html" style="color:#f38630;">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/Productos.html" style="color:#f38630;">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/Datosdecontacto.html" style="color:#f38630;">Contacto</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="../pages/Formulario.html" style="color:#f38630;">Formulario</a>
+          </li>                  
+      </ul>
     </div>
-</header>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
 
 <body>
+    <h1>Productos</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block mx-auto w-50 img-fluid" src="../imagenes/carro1.png" alt="sartenrosa" width="300px" height="auto">
+              </div>
+              <div class="carousel-item text-center">
+                <img class="d-block mx-auto w-50 img-fluid" src="../imagenes/carro2.png" alt="savarin" width="300px" height="auto">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto w-50 img-fluid" src="../imagenes/carrro3.png" alt="utensillos" width="300px" height="auto">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto w-50 img-fluid" src="../imagenes/carro4.png" alt="cacerola" width="300px" height="auto">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto w-50 img-fluid" src="../imagenes/carro5.png" alt="flip" width="300px" height="auto">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto w-50 img-fluid" src="../imagenes/carro10.png" alt="wok" width="300px" height="auto">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block mx-auto w-50" src="../imagenes/carrro9.png" alt="bowl" width="300px" height="auto">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </body>
 
     <nav>
-
-        <br>
+        
         <div class="productos" style="color:aliceblue">
             <div class="caja">
-                Sárten <img src="../imagenes/Sartenrosa.png" width="150" height="150">
+                Sárten <img src="../imagenes/Sartenrosa.png" width="150" height="150" alt="sarten">
             </div>
             <div class="caja">
-                Cacerola <img src="../imagenes/Cacerola.png" width="150" height="150">
+                Cacerola <img src="../imagenes/Cacerola.png" width="150" height="150" alt="cacerola">
             </div>
             <div class="caja">
                 Bifera <img src="../imagenes/biferan.png" width="150" height="150">
@@ -77,19 +164,49 @@
             </div>
     </nav>
 
-</body>
+<!---FOOTER--->
 
-<footer>Todos los derechos son reservados.</footer>
+<footer class="bg-footer c-rojo">
 
-<div class="informacion">
-    <img src="../imagenes/wsp.png" width="25" height="25" alt="whatsapp">
+    <div class="container">
 
+        <div class="row justify-content-lg-between align-items-lg-center border-bottom">
 
-    <img src="../imagenes/gmail.png" width="25" height="25" alt="gmail">
+            <div class="d-flex flex-column align-items-center p-4 col-lg-3">
+                <img src="../imagenes/logoessen.png" alt="logoessen" width="50" height="50" >
+                <span class="essen">¡Tu cocina se merece una ESSEN!</span>
+              
+               
+            <div class="p-1 col-lg-3">
+                <div class="datos">
+                    <ul class="datos">
+                        <li>Rivadavia 9800</li>
+                        <li>Buenos Aires</li>
+                        <li>Argentina</li>
+                        <li>lulitabyessen@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="informacion">
+                    <img src="../imagenes/wsp.png" width="25" height="25" alt="logowhatsapp">
+        
+        
+                    <img src="../imagenes/gmail.png" width="25" height="25" alt="logogmail">
+        
+        
+                    <img src="../imagenes/ig.png" width="25" height="25" alt="logoinstagram">
+        
+                </div>
+            </div>
+        </div>
 
+        <div class="derechos">
+            <span class="copyright">Lucía Puertas Desarrollador Web | © 2022 Todos los derechos reservados
+            </span>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-    <img src="../imagenes/ig.png" width="25" height="25" alt="instagram">
-
-</div>
-
+</footer>
 </html>

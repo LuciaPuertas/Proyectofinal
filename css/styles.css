@@ -4,74 +4,53 @@
   padding-left: 0;
   box-sizing: border-box; }
 
-footer {
-  text-align: center;
-  background-color: antiquewhite;
-  margin: 30px;
-  font-size: 20px; }
-
-.informacion {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-#menu {
+.navbar {
   background-color: aliceblue;
-  display: flex;
-  justify-content: right; }
-  #menu li {
+  display: flex; }
+  .navbar li {
     display: flex;
     font-size: 100%;
     list-style-type: none;
+    text-decoration: none;
+    font-weight: 100%; }
+    .navbar li:hover {
+      background-color: #ffdabf;
+      color: #ff9a52; }
+  .navbar ul {
+    display: flex;
+    font-size: 120%;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 100%; }
+  .navbar li a {
+    display: block;
+    padding: 10px 10px; }
+  .navbar a:link {
     text-decoration: none; }
-    #menu li ul {
-      display: flex;
-      font-size: 120%;
-      list-style-type: none;
-      text-decoration: none; }
-    #menu li li a {
-      display: block;
-      padding: 10px 10px; }
-    #menu li:hover {
-      background-color: antiquewhite;
-      color: darksalmon; }
-  #menu a:link {
+  .navbar a:visited {
     text-decoration: none; }
-  #menu a:visited {
-    text-decoration: none; }
-  @media screen and (min-width: 468px) {
-    #menu #menu {
-      background-color: aliceblue;
-      display: flex;
-      justify-content: right; } }
-  @media screen and (min-width: 468px) {
-    #menu li {
-      display: flex;
-      font-size: 100%;
-      list-style-type: none;
-      text-decoration: none; } }
-  @media screen and (min-width: 468px) {
-    #menu ul {
-      display: flex;
-      font-size: 120%;
-      list-style-type: none;
-      text-decoration: none; } }
-  @media screen and (min-width: 468px) {
-    #menu li a {
-      display: block;
-      padding: 10px 10px; } }
 
 .recetas {
   display: grid;
   grid-template-columns: auto auto;
   font-size: 20px;
-  color: beige;
+  color: black;
   margin: 20px;
   text-align: right center; }
+  .recetas ul {
+    display: flex;
+    font-size: 100%;
+    list-style-type: none;
+    text-decoration: none; }
+  .recetas li {
+    display: flex;
+    font-size: 100%;
+    list-style-type: none;
+    text-decoration: none; }
 
 .preparacion {
   font-size: 20px;
-  color: beige;
+  color: black;
   margin: 20px;
   text-align: right center;
   display: grid;
@@ -80,45 +59,50 @@ footer {
 
 /* columnas */
 .caja {
-  background-color: darksalmon;
+  background-color: #ff9a52;
   width: 200px;
   height: 200px;
   border: 4px solid blanchedalmond;
   margin: auto;
-  padding: 10px; }
+  padding: 10px;
+  color: aliceblue; }
 
 .productos {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: cornsilk;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid blanchedalmond;
-  text-align: center; }
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px; }
 
 .historia {
   font-size: 20px;
-  color: aliceblue;
+  color: black;
   margin: 20px;
-  text-align: right center;
-  background-color: darksalmon; }
+  text-align: right center; }
 
 /* estilos del fondo */
 body {
-  background-color: darksalmon; }
+  background-color: #ffbf91; }
 
 main {
-  background-color: darksalmon; }
+  background-color: #ffbf91; }
 
 header {
-  background-color: darksalmon; }
+  background-color: #ff9a52; }
 
 nav {
-  background-color: darksalmon; }
+  background-color: #ffbf91; }
 
 .pagina {
-  background-color: darksalmon; }
+  background-color: #ffbf91; }
+
+#carouselExampleControls {
+  background-color: #ffbf91; }
 
 /* archivos multimedia */
 #imagen {
@@ -142,33 +126,22 @@ nav {
   max-width: 100%;
   max-height: 100%; }
 
-/* video con transformacion */
-.video {
-  position: inherit;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  margin: 10px;
-  max-width: 100%;
-  max-height: 100%;
-  transform: skewY(5deg); }
-
 form {
   height: 665px;
   background-image: url(../imagenes/empresa.jpg);
   background-repeat: no-repeat;
-  background-size: 100rem; }
+  background-size: 100rem;
+  font-size: large; }
 
 .contacto {
-  background-color: darksalmon;
   list-style-type: none;
   display: inline-flex;
   float: left; }
   .contacto li,
   .contacto p {
-    line-height: 1.5;
-    font-size: 1.5rem; }
+    line-height: 1;
+    font-size: 1.25rem;
+    padding: 10px; }
 
 .mapa {
   position: relative;
@@ -188,25 +161,91 @@ h1 {
   color: aliceblue;
   font-size: 200%; }
   h1:hover {
-    background-color: darksalmon;
-    color: darksalmon; }
+    background-color: #ff9a52;
+    color: #f38630; }
 
-h2 {
-  color: beige;
-  margin: 20px;
-  font-size: 50px; }
-
-h4 {
+.derechos {
   text-align: center;
-  margin: 70px;
-  color: beige;
-  margin: 20px;
-  font-size: 50px; }
+  background-color: #ff9a52;
+  margin: 0px;
+  font-size: 20px;
+  display: flex; }
 
-h5,
-h6 {
-  color: aliceblue;
-  margin: 40px;
-  font-size: 30px;
-  background-color: darksalmon;
-  text-align: center; }
+.datos {
+  text-decoration: none;
+  list-style-type: none; }
+  .datos .li {
+    display: flex;
+    display: block; }
+
+.bg-footer {
+  background-color: #ff9a52; }
+
+#carouselExampleControls {
+  background-color: #ffbf91;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carousel-inner > .item > img {
+  object-fit: scale-down;
+  height: 50vh;
+  width: 100%; }
+
+@media (max-width: 480px) {
+  .recetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+    text-align: right center; }
+    .recetas ul {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; }
+    .recetas li {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; } }
+
+@media (max-width: 768px) {
+  .recetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+    text-align: right center; }
+    .recetas ul {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; }
+    .recetas li {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; } }
+
+@media (min-width: 1200px) {
+  .recetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+    text-align: right center; }
+    .recetas ul {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; }
+    .recetas li {
+      display: flex;
+      font-size: 100%;
+      list-style-type: none;
+      text-decoration: none; } }
